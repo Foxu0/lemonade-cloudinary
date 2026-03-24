@@ -34,6 +34,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // Allow the Lemonade frontend origin to call this server.
 const allowedOrigins = [
+  "https://stately-klepon-cc815b.netlify.app",
   "http://localhost:5500",
   "http://127.0.0.1:5500",
   "http://localhost",
@@ -41,6 +42,7 @@ const allowedOrigins = [
   "http://127.0.0.1",
   "http://127.0.0.1:80"
 ];
+
 
 app.use(
   cors({
